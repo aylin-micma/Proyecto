@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --black-color:#000;
+    --black:#2f4858;    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    min-height: 100vh;
+    background: url('background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.title{
+    text-shadow: 2px 2px 0 var(--black-color), -2px -2px 0 var(--black-color), 
+    -2px -2px 0 var(--black-color), -2px -2px 0 var(--black-color) ;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding: 3.5rem 0;
+    font-size: 4rem;
+}
+
+.title span {
+    color: var(#fff);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+}
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: .5s;
+}
+.header:hover::before {
+    left: 100%;
+}
+.logo {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+.navbar a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover {
+    color: black;
+}
+
+
+
+/* GALERÍA */
+.container {
+    display: flex;
+    max-width:100vw;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*background: #000;*/
+    background: linear-gradient(rgba(89, 180, 255, 0.8) rgba(255, 118, 225, 0.8));
+}
+
+.container img {
+    width: 250px;
+    height: 150px;
+    object-fit:cover ;
+    object-position: center;
+    padding: 5px;
+}
+
+.container img:hover {
+    cursor:pointer;
+    opacity: 0.7;
+    transform: scale(1.05);
+    transform: rotate(-1.2deg) scale(1.05);
+    transition: 0.6s ease-out;
+    filter: grayscale(0.9);
+}
+
+
+/* DESCRIPCIÓN */
+
+.DESCRIPCIÓN .container{
+    display: flex;
+    justify-content: center;
+	background-color: var(--black);
+    flex-wrap: wrap;
+}
+
+.DESCRIPCIÓN .container .content{
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+
+.DESCRIPCIÓN .container .content h3{
+    font-size: 3rem;
+    color: #fff;
+    padding: 1.2rem 0;
+}
+
+.DESCRIPCIÓN .container .content p{
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 2.2rem;
+}
+
+
+/* LEYENDAS */
+
+.wrapper {
+	margin: 140px auto;
+	width: 65%;
+}
+
+.wrapper img {
+	max-width: 320px;
+	float: left;
+	border: 3px solid #fff;
+	border-radius: 10px;
+	margin-right: 15px;
+}
+
+.text-box {
+	color: #fff;
+}
+
+.text-box h1 {
+	font-size: 45px;
+}
+
+.text-box p {
+	font-size: 19px;
+}
+
+
+/* TRADICIONES */
+
+.contenedor {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.galeria {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-box {
+	width: 100px;
+	height: 400px;
+	margin: 10px;
+	border-radius: 50px;
+	background: url(viacrusis.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	transition: width 0.5s;
+}
+
+.img-box:nth-child(2) {
+	background: url(grito.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.img-box:nth-child(3) {
+	background: url(san\ judas.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.img-box:nth-child(4) {
+	background: url(halloween.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.img-box:nth-child(5) {
+	background: url(dia\ de\ muertos.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.img-box:nth-child(6) {
+	background: url(desfile.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.img-box:nth-child(7) {
+	background: url(prosesion.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.img-box:nth-child(8) {
+	background: url(templo\ 12.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.img-box:nth-child(9) {
+	background: url(templo\ 13.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.img-box:nth-child(10) {
+	background: url(posadas.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.img-box h3 {
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 30px;
+	opacity: 0;
+	transition: bottom 0.5s, opacity 0.5s;
+}
+
+.img-box:hover {
+	width: 300px;
+	cursor: pointer;
+}
+
+.img-box:hover h3 {
+	opacity: 1;
+	bottom: 25px;
+}
+
+
+/* CONTACTO */
+
+.material-icons{
+	font-family: "Material Icons";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 48px; /*Preferred icon size*/
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+}
+
+.form-container{
+	background-color: white;
+	width: 80%;
+	border-radius: 5px;
+	overflow: hidden;
+	height: 90vh;
+
+	display: flex;
+	align-items: center; 
+}
+
+.form-container .login-container{
+	width: 500px;
+	margin: 0 auto;
+}
+
+.form-container .login-container > h2{
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.form-container .login-container > p,
+.form-container .login-container span{
+	color: #555;
+	text-align: center;
+}
+
+.form-container .login-container label1{
+	display: block;
+	font-weight: bold;
+	padding: 5px 0;
+}
+
+.form-container .login-container input.input{
+	display: block;
+	box-sizing: border-box;
+	padding: 10px;
+	border:solid 1px #ccc;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.form-container .login-container .providers{
+	display: flex;
+	flex-direction: column;
+	gap:10px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.form-container .login-container button.btn,
+.form-container .login-container input.btn{
+	border:none;
+	padding: 15px 0;
+	width: 100%;
+	font-weight: bolder;
+	display: block;
+	border-radius: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.form-container .login-container input.btn.btn-login{
+	background-color: black;
+	color: white; 
+}
+
+.form-container .login-container button.btn.google-provider{
+	background-color: white;
+	color:black;
+	border:solid 1px #ccc;
+}
+
+.form-container .login-container button.btn.facebook-provider{
+	background-color: rgb(10, 82, 216);
+	color: white;
+	border:0;
+}
+
+.form-container .login-container button.btn.twitter-provider{
+	background-color: rgb(10, 168, 216);
+	color: white;
+	border:0;
+}
+
+.form-container .login-container button.btn.google-provider:hover{
+	background-color: rgb(212, 212, 212);
+	color: black;
+}
+
+.form-container .login-container button.btn.facebook-provider:hover{
+	background-color: rgb(6, 61, 163);
+	color: white;
+}
+.form-container .login-container button.btn.twitter-provider:hover{
+	background-color: rgb(7, 133, 172);
+	color: white;
+}
+
+.form-container .login-container .options{
+    display:flex;
+    justify-content: space-between;
+}
+
+.form-container .welcome-screen-container{
+	background-color: black;
+	height: 100%;
+	width: 50%;
+}
+
+@media screen and(max-width: 1357px){
+	.form-container{
+		width: 95%;
+	}
+	.form-container .login-container{
+		width: 400px;
+		margin: 0 auto;
+	}
+	.form-container .welcome-screen-container{
+		width: 40%;
+	}
+}
+@media screen and(max-width: 900px){
+	.form-container .login-container{
+		width: 400px;
+		margin: 0 auto;
+	}
+	.form-container .welcome-screen-container{
+		width: 0%;
+	}
+}
